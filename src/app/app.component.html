@@ -1,0 +1,15 @@
+<div>
+<h1>Robot</h1>
+<div class="boxTable" [innerHtml]="layout()"></div>
+
+<footer>
+
+ <input type="text" [(ngModel)]="enteredCli"  >
+ <button (click)="proccess()" id="submitButton" >
+Submit
+ </button>
+
+ <div>{{outputMessage}}</div>
+ <div [innerHtml] = "report"></div>
+</footer>
+</div>
